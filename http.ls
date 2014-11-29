@@ -38,7 +38,6 @@ app
 	.post (req, res, next)->
 		console.log util.inspect req.files
 		console.log util.inspect req.fields
-		console.log req.files.length()
 		if req.files.length < 0
 			console.log 'files not null'
 			res.send 'files not null'
