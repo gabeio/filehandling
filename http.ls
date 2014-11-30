@@ -36,8 +36,8 @@ app
 		</html>"""
 	..route '/upload'
 	.post (req, res, next)->
-		console.log util.inspect req.files
-		console.log util.inspect req.fields
+		console.log 'files: '+ util.inspect req.files
+		console.log 'fields: '+ util.inspect req.fields
 		if req.files.length < 0
 			console.log 'files not null'
 			res.send 'files not null'
